@@ -1,0 +1,60 @@
+.header{
+    height: 150px;
+    background-color: @header-background-color;
+    text-align: center;
+    border-bottom: 5px solid @brand-primary;
+}
+.logo-container{
+    display: inline-block;
+    padding-top: 28px;
+    a{
+        text-decoration: none;
+    }
+}
+.logo-image{
+    display: inline-block;
+    img{
+        width: 90px;
+        &:hover{
+            -webkit-animation-name: wiggle;
+            -ms-animation-name: wiggle;
+            -ms-animation-duration: 200ms;
+            -webkit-animation-duration: 200ms;
+            -webkit-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 1;
+            -webkit-animation-timing-function: ease-in-out;
+            -ms-animation-timing-function: ease-in-out;
+        }
+    }
+}
+.logo-text{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    bottom: 36px;
+}
+.main-navigation{
+    color: #fff;
+    float: right;
+    a{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+            transition: 0.3s;
+            color: darken(#fff, 10%);
+        }
+    }
+}
+.menu-item{
+    background-color: @menu-background-color;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    &:hover{
+        animation-name: menu;
+        animation-duration: 1s;
+    }
+}
