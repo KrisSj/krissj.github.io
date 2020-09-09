@@ -1,0 +1,37 @@
+.main-content{
+    height: 100vw;
+    padding-top: 25px;
+    width: 800px;
+    margin: auto;
+}
+.content{
+    background-color: @content-bg-color;
+    width: 800px;
+    margin: auto;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    h2{
+        font-family: Unica;
+        font-size: 14px;
+        color: #fff;
+        display: inline-block;
+        &::before{
+            content: "- ";
+        }
+    }
+    p{
+        font-family: Roboto;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+.menu-item{
+    background-color: @menu-bg-color;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    &:hover{
+        animation-name: menu;
+        animation-duration: 1s;
+    }
+}

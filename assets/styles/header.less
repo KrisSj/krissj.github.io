@@ -1,8 +1,11 @@
 .header{
     height: 150px;
-    background-color: @header-background-color;
+    background-color: @header-bg-color;
     text-align: center;
-    border-bottom: 5px solid @brand-primary;
+    border-bottom: 4px solid @brand-primary;
+    a:hover{
+        color: @link-color;
+    }
 }
 .logo-container{
     display: inline-block;
@@ -21,7 +24,7 @@
             -ms-animation-duration: 200ms;
             -webkit-animation-duration: 200ms;
             -webkit-animation-iteration-count: 1;
-            -ms-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 2;
             -webkit-animation-timing-function: ease-in-out;
             -ms-animation-timing-function: ease-in-out;
         }
@@ -37,7 +40,7 @@
 }
 .logo-text-small{
     bottom: 42px;
-    left: 70px;
+    left: 119px;
     position: relative;
     font-size: 14px;
 }
@@ -55,7 +58,7 @@
     }
 }
 .menu-item{
-    background-color: @menu-background-color;
+    background-color: @menu-bg-color;
     display: block;
     padding: 5px;
     margin: 5px;

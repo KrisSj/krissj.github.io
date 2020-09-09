@@ -2,9 +2,10 @@
 @import "header.less";
 @import "fonts.less";
 @import "animations.less";
+@import "content.less";
 
 body{
-    background-color: @site-background-color;
+    background-color: @site-bg-color;
     font-family: @font-default;
     margin: auto;
     padding: auto;
@@ -16,5 +17,12 @@ a,
     font-family: @font-link;
 }
 a:hover{
-    color: darken(@link-color, 10%);
+    color: darken(@link-color, 5%);
+}
+h1{
+    font-family: Unica;
+    font-size: 28px;
+    color: @brand-primary;
+    display: inline-block;
+    text-transform: uppercase;
 }
